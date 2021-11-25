@@ -122,7 +122,7 @@ namespace ConsoleApp1
                 string reviewsRepositoryItem = Console.ReadLine();
                 reviewsRepository.Add(reviewsRepositoryItem.ToLower());
             }
-
+            Console.WriteLine("Unesite rijec po kojoj zelite pretragu: \n");
             string userInput = Console.ReadLine();
 
             List<List<string>> foo = Foo.SearchSuggestions(reviewsRepository, userInput.ToLower());
